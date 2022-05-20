@@ -7,7 +7,7 @@ now = datetime.datetime.now()
 
 int_day = my_day.weekday()
 today = calendar.day_name[my_day.weekday()]
-c_time = now.strftime("%I:%M:%p__%Ssec").lower()
+c_time = now.strftime("%I:%M:%S%p").lower()
 c_hour = int(now.strftime("%I"))
 c_min = int(now.strftime("%M"))
 am_pm = now.strftime("%p")
@@ -26,237 +26,231 @@ if int_day == 5:
         if c_hour == 6 and c_min < 31:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 203
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-
-                ==============Running_Class_Is==============
-                Subject Name: Unknown (?)
-                Room No     : 206
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mr. Y (R.S)
-
-                =============Next_Class_Will_Be=============           
-                It is the last class for Today.
-                The class will end at 06:30pm
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 203
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    
+    ==============Running_Class_Is==============
+    Subject Name: Unknown (?)
+    Room No     : 206
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mr. Y (R.S)
+    
+    =============Next_Class_Will_Be=============           
+    It is the last class for Today.
+    The class will end at 06:30pm
+    """)
         elif c_hour >= 6 and c_hour != 12:
             print(
                 f"""
-            Today is "{today}" and the time is {c_time}
+    Today is "{today}" and the time is {c_time}
             """)
             print(
-                """
-                There are no more classes today
-                The Last Class Ended at 06:30pm
-                """)
+    """
+    There are no more classes today
+    The Last Class Ended at 06:30pm
+    """)
 
         elif c_hour == 5 and c_min >= 0:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-
-                ==============Running_Class_Is==============
-                Subject Name: Unknown (?)
-                Room No     : 206
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mr. Y (R.S)
-
-                =============Next_Class_Will_Be=============           
-                It is the last class for Today.
-                The class will end at 06:30pm
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    
+    ==============Running_Class_Is==============
+    Subject Name: Unknown (?)
+    Room No     : 206
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mr. Y (R.S)
+    
+    =============Next_Class_Will_Be=============           
+    It is the last class for Today.
+    The class will end at 06:30pm
+    """)
         elif c_hour == 4 and c_min >= 15:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-
-                ==============Running_Class_Is==============
-                Subject Name: Unknown (?)
-                Room No     : 206
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mr. Y (R.S)
-
-                =============Next_Class_Will_Be=============           
-                It is the last class for Today.
-                The class will end at 06:30pm
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    ==============Running_Class_Is==============
+    Subject Name: Unknown (?)
+    Room No     : 206
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mr. Y (R.S)
+    =============Next_Class_Will_Be=============           
+    It is the last class for Today.
+    The class will end at 06:30pm
+    """)
         elif c_hour == 4 and c_min < 15:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Programming Essentials (66631)
-                Room No     : 203
-                Time        : 02:00pm - 03:30pm
-                Teacher Name: Mr. Aminur Rahman.
-
-                ==============Running_Class_Is==============
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-
-                =============Next_Class_Will_Be=============           
-                Subject Name: Unknown (?)
-                Room No     : 206
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mr. Y (R.S)
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Programming Essentials (66631)
+    Room No     : 203
+    Time        : 02:00pm - 03:30pm
+    Teacher Name: Mr. Aminur Rahman.
+    ==============Running_Class_Is==============
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    =============Next_Class_Will_Be=============           
+    Subject Name: Unknown (?)
+    Room No     : 206
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mr. Y (R.S)
+    """)
         elif c_hour == 3 and c_min >= 30:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Programming Essentials (66631)
-                Room No     : 203
-                Time        : 02:00pm - 03:30pm
-                Teacher Name: Mr. Aminur Rahman.
-
-                ==============Running_Class_Is==============
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury.
-
-                =============Next_Class_Will_Be=============           
-                Subject Name: Unknown (?)
-                Room No     : 206
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mr. Y (R.S)
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Programming Essentials (66631)
+    Room No     : 203
+    Time        : 02:00pm - 03:30pm
+    Teacher Name: Mr. Aminur Rahman.
+    ==============Running_Class_Is==============
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury.
+    =============Next_Class_Will_Be=============           
+    Subject Name: Unknown (?)
+    Room No     : 206
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mr. Y (R.S)
+    """)
         elif c_hour == 3 and c_min < 30:
             print(
                 f"""
-            Today is {today} and the time is {c_time}. So, That.
+    Today is {today} and the time is {c_time}. 
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Mathmatics-3 (65931)
-                Room No     : 203
-                Time        : 01:15pm - 02:00pm
-                Teacher Name: Mr. Hasmut ullah Sajib.
-
-                ==============Running_Class_Is==============
-                Subject Name: Programming Essentials (66631)
-                Room No     : 203
-                Time        : 02:00pm - 03:30pm
-                Teacher Name: Mr. Aminur Rahman.
-
-                =============Next_Class_Will_Be=============           
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Mathmatics-3 (65931)
+    Room No     : 203
+    Time        : 01:15pm - 02:00pm
+    Teacher Name: Mr. Hasmut ullah Sajib.
+    
+    ==============Running_Class_Is==============
+    Subject Name: Programming Essentials (66631)
+    Room No     : 203
+    Time        : 02:00pm - 03:30pm
+    Teacher Name: Mr. Aminur Rahman.
+    
+    =============Next_Class_Will_Be=============           
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    """)
         elif c_hour == 2 and c_min >= 0:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Mathmatics-3 (65931)
-                Room No     : 203
-                Time        : 01:15pm - 02:00pm
-                Teacher Name: Mr. Hasmut ullah Sajib.
-
-                ==============Running_Class_Is==============
-                Subject Name: Programming Essentials (66631)
-                Room No     : 203
-                Time        : 02:00pm - 03:30pm
-                Teacher Name: Mr. Aminur Rahman.
-
-                =============Next_Class_Will_Be=============          
-                Subject Name: Chemistry-1 (65913)
-                Room No     : 100-A
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Mr. Mazarul Islam Chowdhury
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: Mathmatics-3 (65931)
+    Room No     : 203
+    Time        : 01:15pm - 02:00pm
+    Teacher Name: Mr. Hasmut ullah Sajib.
+    
+    ==============Running_Class_Is==============
+    Subject Name: Programming Essentials (66631)
+    Room No     : 203
+    Time        : 02:00pm - 03:30pm
+    Teacher Name: Mr. Aminur Rahman.
+    
+    =============Next_Class_Will_Be=============          
+    Subject Name: Chemistry-1 (65913)
+    Room No     : 100-A
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Mr. Mazarul Islam Chowdhury
+    """)
         elif c_hour == 1 and c_min >= 15:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
-                """
-                ===========The_Previous_Class_Was===========
-                Subject Name: N/A
-
-                ==============Running_Class_Is==============
-                Subject Name: Mathmatics-3 (65931)
-                Room No     : 203
-                Time        : 01:15pm - 02:00pm
-                Teacher Name: Mr. Hasmut ullah Sajib 
-
-                =============Next_Class_Will_Be=============
-                Subject Name: Programming Essentials
-                Room No     : 203
-                Time        : 02:00pm - 03:30pm
-                Teacher Name: Mr. Aminur Rahman.
-                """)
+    """
+    ===========The_Previous_Class_Was===========
+    Subject Name: N/A
+    
+    ==============Running_Class_Is==============
+    Subject Name: Mathmatics-3 (65931)
+    Room No     : 203
+    Time        : 01:15pm - 02:00pm
+    Teacher Name: Mr. Hasmut ullah Sajib
+     
+    =============Next_Class_Will_Be=============
+    Subject Name: Programming Essentials
+    Room No     : 203
+    Time        : 02:00pm - 03:30pm
+    Teacher Name: Mr. Aminur Rahman.
+    """)
         elif c_hour == 1 and c_min < 15:
             print(
                 f"""
-            Today is {today} and the time is {c_time}. So, That.
+    Today is {today} and the time is {c_time}. 
             """)
             print(
-                """
-                ===================================
-                Class will start very soon at 01:15pm
-                Today's first class is Math (65931)
-                Room No: 203
-                Class will be held form 01:15-02:00pm
-                Teacher Name: Mr. Hasmut ullah Sajib
-                ===================================
-                """)
+    """
+    ===================================
+    Class will start very soon at 01:15pm
+    Today's first class is Math (65931)
+    Room No: 203
+    Class will be held form 01:15-02:00pm
+    Teacher Name: Mr. Hasmut ullah Sajib
+    ===================================
+    """)
         elif c_hour == 12 and c_min >= 0:
             print(
                 f"""
 
-            ===================================
-            Today is {today} and the time is {c_time}
-            Class will start at 01:15pm
-            """)
+    ===================================
+    Today is {today} and the time is {c_time}
+    Class will start at 01:15pm
+    """)
             print(
-                """                        
-                ===================================
-                Classes not started yet
-                Today's first class is Math (65931)
-                And Class will start at 01:15pm
-                Teacher Name: Mr. Hasmut ullah Sajib.
-                ===================================                   
-                """)
+    """                        
+    ===================================
+    Classes not started yet
+    Today's first class is Math (65931)
+    And Class will start at 01:15pm
+    Teacher Name: Mr. Hasmut ullah Sajib.
+    ===================================                   
+    """)
     else:
         print(
             f"""
@@ -411,7 +405,7 @@ elif int_day == 6:
         elif c_hour == 3 and c_min < 30:
             print(
                 f"""
-            Today is {today} and the time is {c_time}. So, That.
+            Today is {today} and the time is {c_time}. 
             """)
             print(
                 """
@@ -477,7 +471,7 @@ elif int_day == 6:
         elif c_hour == 1 and c_min < 15:
             print(
                 f"""
-                Today is {today} and the time is {c_time}. So, That.
+                Today is {today} and the time is {c_time}. 
                 """)
             print(
                 """
@@ -659,7 +653,7 @@ elif int_day == 0:
         elif c_hour == 3 and c_min < 30:
             print(
                 f"""
-                Today is {today} and the time is {c_time}. So, That.
+                Today is {today} and the time is {c_time}. 
                 """)
             print(
                 """
@@ -756,7 +750,7 @@ elif int_day == 0:
         elif c_hour == 1 and c_min < 15:
             print(
                 f"""
-                Today is {today} and the time is {c_time}. So, That.
+                Today is {today} and the time is {c_time}. 
                 """)
             print(
                 """
@@ -939,7 +933,7 @@ elif int_day == 1:
         elif c_hour == 3 and c_min < 30:
             print(
                 f"""
-            Today is {today} and the time is {c_time}. So, That.
+            Today is {today} and the time is {c_time}. 
             """)
             print(
                 """
@@ -1005,7 +999,7 @@ elif int_day == 1:
         elif c_hour == 1 and c_min < 15:
             print(
                 f"""
-                Today is {today} and the time is {c_time}. So, That.
+                Today is {today} and the time is {c_time}. 
                 """)
             print(
                 """
@@ -1157,7 +1151,7 @@ elif int_day == 2:
         elif c_hour == 3 and c_min < 30:
             print(
                 f"""
-            Today is {today} and the time is {c_time}. So, That.
+            Today is {today} and the time is {c_time}. 
             """)
             print(
                 """
@@ -1223,7 +1217,7 @@ elif int_day == 2:
         elif c_hour == 1 and c_min < 15:
             print(
                 f"""
-                Today is {today} and the time is {c_time}. So, That.
+                Today is {today} and the time is {c_time}. 
                 """)
             print(
                 """
@@ -1336,7 +1330,7 @@ elif int_day == 3:
             print(
                 """
     ===========The_Previous_Class_Was===========
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
@@ -1365,7 +1359,7 @@ elif int_day == 3:
     Teacher Name: Taskin Nahar.
     
     ==============Running_Class_Is==============
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
@@ -1391,7 +1385,7 @@ elif int_day == 3:
     Teacher Name: Taskin Nahar.
     
     ==============Running_Class_Is==============
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
@@ -1420,7 +1414,7 @@ elif int_day == 3:
     Teacher Name: Taskin Nahar.
     
     =============Next_Class_Will_Be=============
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
@@ -1443,7 +1437,7 @@ elif int_day == 3:
     Teacher Name: Taskin Nahar.
     
     =============Next_Class_Will_Be=============
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
@@ -1451,8 +1445,9 @@ elif int_day == 3:
         elif c_hour == 1 and c_min >= 15:
             print(
                 f"""
-
-    Today is {today} and the time is {c_time}
+    ============================================
+    ||Today is {today} and the time is {c_time}||
+    ============================================
                 """)
             print(
     """
@@ -1466,7 +1461,7 @@ elif int_day == 3:
     Teacher Name: Taskin Nahar.
     
     =============Next_Class_Will_Be=============
-    Subject Name: Mathmatics-2 (65931)
+    Subject Name: Mathmatics-3 (65931)
     Room No     : 302
     Time        : 03:31pm - 04:15pm
     Teacher Name: Md. Hasmut Ullah Sajib.
