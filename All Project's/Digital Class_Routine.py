@@ -205,19 +205,22 @@ if int_day == 5:
             print(
     """
     ===========The_Previous_Class_Was===========
-    Subject Name: N/A
+    ||Subject Name: N/A                       ||
+    ============================================
     
     ==============Running_Class_Is==============
-    Subject Name: Mathmatics-3 (65931)
-    Room No     : 203
-    Time        : 01:15pm - 02:00pm
-    Teacher Name: Mr. Hasmut ullah Sajib
+    ||Subject Name: Mathmatics-3 (65931)      ||  
+    ||Room No     : 203                       ||  
+    ||Time        : 01:15pm - 02:00pm         ||  
+    ||Teacher Name: Mr. Hasmut ullah Sajib    ||  
+    ============================================
      
     =============Next_Class_Will_Be=============
-    Subject Name: Programming Essentials
-    Room No     : 203
-    Time        : 02:00pm - 03:30pm
-    Teacher Name: Mr. Aminur Rahman.
+    ||Subject Name: Programming Essentials    ||  
+    ||Room No     : 203                       || 
+    ||Time        : 02:00pm - 03:30pm         || 
+    ||Teacher Name: Mr. Aminur Rahman.        ||
+    ============================================
     """)
         elif c_hour == 1 and c_min < 15:
             print(
@@ -226,29 +229,30 @@ if int_day == 5:
             """)
             print(
     """
-    ===================================
+    ============================================
     Class will start very soon at 01:15pm
     Today's first class is Math (65931)
     Room No: 203
     Class will be held form 01:15-02:00pm
     Teacher Name: Mr. Hasmut ullah Sajib
-    ===================================
+    ============================================
     """)
         elif c_hour == 12 and c_min >= 0:
             print(
                 f"""
 
-    ===================================
-    Today is {today} and the time is {c_time}
+    ================================================
+    ||Today is {today} and the time is {c_time}||
+    ================================================
     """)
             print(
     """                        
-    ===================================
-    Classes not started yet
-    Today's first class is Math (65931)
-    And Class will start at 01:15pm
-    Teacher Name: Mr. Hasmut ullah Sajib.
-    ===================================                   
+    ================================================
+    ||Classes not started yet                     ||
+    ||Today's first class is Math (65931)         ||
+    ||And Class will start at 01:15pm             ||
+    ||Teacher Name: Mr. Hasmut ullah Sajib.       ||
+    ================================================                   
     """)
     else:
         print(
@@ -274,26 +278,24 @@ elif int_day == 6:
         if c_hour == 6 and c_min < 31:
             print(
                 f"""
-            Today is {today} and the time is {c_time}
+    Today is {today} and the time is {c_time}
             """)
             print(
                 """
-                ===========The_Previous_Class_Was===========
-                Subject Name: Social Science (65811)
-                Room No     : 101
-                Time        : 03:30pm - 04:15pm
-                Teacher Name: Biplob kumar Sorkar.
-
-                ==============Running_Class_Is==============
-                Subject Name: Web Design (66632)
-                Room No     : Application Lab
-                Time        : 04:15pm - 06:30pm
-                Teacher Name: Mst Mim.
-
-                =============Next_Class_Will_Be=============           
-                It is the last class for Today.
-                The class will end at 06:30pm
-                """)
+    ===========The_Previous_Class_Was===========
+    Subject Name: Social Science (65811)
+    Room No     : 101
+    Time        : 03:30pm - 04:15pm
+    Teacher Name: Biplob kumar Sorka
+    ==============Running_Class_Is==============
+    Subject Name: Web Design (66632)
+    Room No     : Application Lab
+    Time        : 04:15pm - 06:30pm
+    Teacher Name: Mst Mi
+    =============Next_Class_Will_Be=============           
+    It is the last class for Today.
+    The class will end at 06:30pm
+    """)
         elif c_hour >= 6 and c_hour != 12:
             print(
                 f"""
