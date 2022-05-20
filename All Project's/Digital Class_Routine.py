@@ -240,7 +240,6 @@ if int_day == 5:
 
     ===================================
     Today is {today} and the time is {c_time}
-    Class will start at 01:15pm
     """)
             print(
     """                        
