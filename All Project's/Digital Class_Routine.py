@@ -1692,6 +1692,6 @@ else:
 
     ================================================
     ||         It's Our National Holiday.         ||   
-    ||      T  here are no classes today.         ||  
+    ||        There are no classes today.         ||  
     ================================================
     """)
