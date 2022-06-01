@@ -1179,10 +1179,24 @@ elif int_day == 1:
 
 elif int_day == 2:
     if am_pm == "PM":
+        if c_hour >= 6 and c_hour != 12:
+            print(
+    f"""
+    ================================================
+    ||Today is {today} and the time is {c_time}||
+    ================================================
+    
+    ================================================
+    || There are no more classes today            ||
+    || The Last session was ended at 05:45pm      ||
+    ================================================
+    """)
         if c_hour >= 5 and c_hour != 12 and c_min > 45:
             print(
-                f"""
-    Today is "{today}" and the time is {c_time}
+            f"""
+    ================================================
+    ||Today is {today} and the time is {c_time}||
+    ================================================
             """)
             print(
     """
@@ -1192,7 +1206,7 @@ elif int_day == 2:
 
         elif c_hour == 5 and c_min <= 45:
             print(
-                f"""
+            f"""
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
