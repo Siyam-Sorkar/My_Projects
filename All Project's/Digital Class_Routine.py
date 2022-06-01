@@ -1,3 +1,5 @@
+                                            #Digital CLass Routine made for simplifying the age old routine.
+
 from datetime import date
 import calendar
 import datetime
@@ -19,7 +21,7 @@ am_pm = now.strftime("%p")
 # print(am_pm)
 
 
-# Saturday
+# Saturday                                                                                                                                                                               # Saturday
 
 if int_day == 5:
     if am_pm == "PM":
@@ -310,6 +312,7 @@ if int_day == 5:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
+    
     ================================================
     ||          There are 4 Classes Today         ||
     ================================================                  
@@ -322,7 +325,7 @@ if int_day == 5:
     """)
 
 
-# Sunday
+# Sunday                                                                                                                                                                               # Sunday
 
 elif int_day == 6:
     if am_pm == "PM":
@@ -582,6 +585,7 @@ elif int_day == 6:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
+    
     ================================================
     ||          There are 3 Classes Today         ||
     ================================================                  
@@ -593,7 +597,7 @@ elif int_day == 6:
     """)
 
 
-# Monday
+# Monday                                                                                                                                                                               # Monday
 
 elif int_day == 0:
     if am_pm == "PM":
@@ -885,20 +889,21 @@ elif int_day == 0:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
-     ================================================
-     ||          There are 5 Classes Today         ||
-     ================================================                  
-     ||      Subject_Name                 Time     ||
-     || 1. NIS HOD                   1:15pm-2:00pm ||
-     || 2. Chemistry-1               2:00pm-2:45pm ||
-     || 3. Social Science            2:45pm-3:30pm ||
-     || 4. It Support System-2       3:30pm-5:45pm ||
-     || 5. Mathmatics-3              5:45pm-6:30pm ||  
-     ================================================
+    
+    ================================================
+    ||          There are 5 Classes Today         ||
+    ================================================                  
+    ||      Subject_Name                 Time     ||
+    || 1. NIS HOD                   1:15pm-2:00pm ||
+    || 2. Chemistry-1               2:00pm-2:45pm ||
+    || 3. Social Science            2:45pm-3:30pm ||
+    || 4. It Support System-2       3:30pm-5:45pm ||
+    || 5. Mathmatics-3              5:45pm-6:30pm ||  
+    ================================================
     """)
 
 
-# Tuesday
+# Tuesday                                                                                                                                                                               # Tuesday
 
 elif int_day == 1:
     if am_pm == "PM":
@@ -1158,6 +1163,7 @@ elif int_day == 1:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
+    
     ================================================
     ||          There are 3 Classes Today         ||
     ================================================                  
@@ -1169,7 +1175,7 @@ elif int_day == 1:
     """)
 
 
-# Wednesday
+# Wednesday                                                                                                                                                                               # Wednesday
 
 elif int_day == 2:
     if am_pm == "PM":
@@ -1398,6 +1404,7 @@ elif int_day == 2:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
+    
     ================================================
     ||          There are 3 Classes Today         ||
     ================================================                  
@@ -1409,7 +1416,7 @@ elif int_day == 2:
     """)
 
 
-# Thursday
+# Thursday                                                                                                                                                                               # Thursday
 
 elif int_day == 3:
     if am_pm == "PM":
@@ -1670,6 +1677,7 @@ elif int_day == 3:
     ================================================
     ||Today is {today} and the time is {c_time}||
     ================================================
+    
     ================================================
     ||          There are 3 Classes Today         ||
     ================================================                  
@@ -1680,7 +1688,7 @@ elif int_day == 3:
     ================================================
     """)
 
-# Friday
+# Friday                                                                                                                                                                               # Friday
 
 else:
     print(
